@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2.7</title>
+    <style>
+        .static-div {
+            background-color: blueviolet;
+            color: white;
+            width: 150px;
+            height: 100px;
+            position: static;
+        }
+
+        .relative-div-1 {
+            background-color: darkred;
+            color: white;
+            width: 150px;
+            height: 100px;
+            position: relative;
+        }
+
+        .relative-div-2 {
+            background-color: peru;
+            color: white;
+            width: 150px;
+            height: 100px;
+            position: relative;
+            top: -40px;
+            left: 30px;
+        }
+
+        .relative-div-big {
+            background-color: indianred;
+            color: white;
+            width: 450px;
+            height: 300px;
+            position: relative;
+        }
+
+        .absolute-div {
+            background-color: indigo;
+            color: white;
+            width: 230px;
+            height: 150px;
+            right: 0;
+            top: 80px;
+            position: absolute;
+        }
+
+        .fixed-div {
+            background-color: forestgreen;
+            color: white;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static-div">It's a static div!</div>
+    <div class="relative-div-1">It's a relative div!</div>
+    <div class="relative-div-2">It's a relative div!</div>
+    <div class="relative-div-big">
+        It's a relative div!
+        <div class="absolute-div">It's an absolute div with relative parent!</div>
+    </div>
+    <div class="fixed-div">It's a fixed div!</div>
+</body>
+</html>

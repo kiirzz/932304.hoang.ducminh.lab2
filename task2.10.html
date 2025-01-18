@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2.10</title>
+    <style>
+        .container {
+            margin: 20px;
+        }
+
+        .fix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .box1 {
+            background-color: limegreen;
+            float: left;
+            width: 200px;
+            height: 90px;
+        }
+
+        .box2 {
+            clear: both; 
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fix">
+        <div class="box1">It's a float box</div>  
+    </div>
+    <div class="box2">It's a box with clear property</div>
+</body>
+</html>

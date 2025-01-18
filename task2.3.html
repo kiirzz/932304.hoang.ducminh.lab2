@@ -11,13 +11,17 @@
         }
 
         .box {
-            width: 450px;
-            height: 270px;
+            width: 550px;
+            min-width: 550px;
+            max-height: 250px;
             background-color: blue;
             color: white;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0);
+        }
+
+        @media(max-width: 550px) {
+            main {
+                justify-content: left;
+            }
         }
     </style>
 </head>

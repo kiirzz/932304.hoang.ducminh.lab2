@@ -11,8 +11,9 @@
         }
 
         .box {
-            width: 450px;
-            max-height: 500px;
+            width: 550px;
+            min-width: 550px;
+            max-width: 375px;
             background-color: blue;
             color: white;
         }
@@ -20,6 +21,12 @@
         img {
             width: 250px;
             margin: 0 0 10px 10px;
+        }
+
+        @media(max-width: 550px) {
+            main {
+                justify-content: left;
+            }
         }
     </style>
 </head>
